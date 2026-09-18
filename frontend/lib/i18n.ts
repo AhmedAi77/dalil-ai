@@ -1,0 +1,46 @@
+export type Locale = "en" | "ar";
+
+export const copy = {
+  en: {
+    library: "Knowledge", all: "All knowledge", add: "Add knowledge", search: "Search documents",
+    chats: "Chats", newChat: "New chat", noChats: "Your conversations will appear here.", deleteChat: "Delete chat", deleteAnswer: "Delete answer", untitledChat: "New conversation", today: "Today", messages: "answers",
+    emptySearch: "No documents match your search.", welcome: "Good to see you, {name}.",
+    headline: "What can we find in your knowledge?", subhead: "Ask across your documents and get a clear answer with the evidence attached.",
+    placeholder: "Ask anything about your documents…", ask: "Ask", sources: "Sources", chunk: "Passage",
+    upload: "Upload a file", paste: "Paste text", addTitle: "Add to your knowledge",
+    addSub: "Upload a document or paste notes. We’ll index it for search.", choose: "Choose a document",
+    drop: "TXT, Markdown, PDF, DOCX or Excel · up to 20 MB", index: "Add to library", title: "Title",
+    required: "Required", content: "Content", contentPlaceholder: "Paste text or Markdown you want Dalil AI to learn…", titleRequired: "Enter a title first.", markdownHint: "Markdown formatting is supported.",
+    cancel: "Cancel", chars: "characters", delete: "Delete", deleteConfirm: "Delete this document?",
+    deleteSub: "It will be removed from your library and search index.", deleting: "Deleting…", record: "Record question",
+    stop: "Stop & ask", answer: "Answer", youSaid: "You said", clear: "New question", thinking: "Searching your knowledge…",
+    noDocs: "Your library is ready for its first idea.", noDocsSub: "Add a document, report, or a page of notes to begin asking questions.",
+    backend: "Couldn’t reach the Dalil AI API. Make sure FastAPI is running on port 8000.",
+    uploadSuccess: "Added to your library.", deleteSuccess: "Document removed.",
+    scoped: "Searching", private: "Private workspace", menu: "Open navigation", close: "Close", fileRequired: "Choose a file first.", textRequired: "Paste some content first.", micDenied: "Microphone access was blocked. Allow it in your browser and try again.", micUnsupported: "Audio recording is not supported by this browser.", emptyRecording: "No audio was captured. Please try again.",
+    signIn: "Sign in", createAccount: "Create account", authTitle: "Your knowledge stays yours.", authSub: "Sign in to access your private documents, remembered chats, and source-grounded answers.", name: "Full name", email: "Email address", password: "Password", passwordHint: "At least 8 characters", noAccount: "New to Dalil AI?", haveAccount: "Already have an account?", logout: "Sign out",
+    welcomeUser: "Welcome to Dalil AI, {name}.",
+  },
+  ar: {
+    library: "المعرفة", all: "كل المعرفة", add: "إضافة معرفة", search: "بحث في المستندات",
+    chats: "المحادثات", newChat: "محادثة جديدة", noChats: "ستظهر محادثاتك هنا.", deleteChat: "حذف المحادثة", deleteAnswer: "حذف الإجابة", untitledChat: "محادثة جديدة", today: "اليوم", messages: "إجابات",
+    emptySearch: "لا توجد مستندات مطابقة.", welcome: "سعداء برؤيتك، {name}.",
+    headline: "ماذا نجد في معرفتك؟", subhead: "اسأل مستنداتك واحصل على إجابة واضحة مع الأدلة والمصادر.",
+    placeholder: "اسأل أي شيء عن مستنداتك…", ask: "اسأل", sources: "المصادر", chunk: "المقطع",
+    upload: "رفع ملف", paste: "لصق نص", addTitle: "أضف إلى معرفتك",
+    addSub: "ارفع مستنداً أو الصق ملاحظاتك وسنجعلها قابلة للبحث.", choose: "اختر مستنداً",
+    drop: "TXT أو Markdown أو PDF أو DOCX أو Excel · حتى 20 ميغابايت", index: "إضافة إلى المكتبة", title: "العنوان",
+    required: "مطلوب", content: "المحتوى", contentPlaceholder: "الصق النص أو Markdown الذي تريد من دليل تعلمه…", titleRequired: "أدخل عنواناً أولاً.", markdownHint: "تنسيق Markdown مدعوم.",
+    cancel: "إلغاء", chars: "حرف", delete: "حذف", deleteConfirm: "حذف هذا المستند؟",
+    deleteSub: "سيُزال من المكتبة وفهرس البحث.", deleting: "جارٍ الحذف…", record: "تسجيل سؤال",
+    stop: "إيقاف وسؤال", answer: "الإجابة", youSaid: "قلت", clear: "سؤال جديد", thinking: "جارٍ البحث في معرفتك…",
+    noDocs: "مكتبتك جاهزة لأول فكرة.", noDocsSub: "أضف مستنداً أو تقريراً أو صفحة ملاحظات لتبدأ بطرح الأسئلة.",
+    backend: "تعذر الاتصال بواجهة دليل. تأكد من تشغيل FastAPI على المنفذ 8000.",
+    uploadSuccess: "تمت الإضافة إلى مكتبتك.", deleteSuccess: "تم حذف المستند.",
+    scoped: "البحث في", private: "مساحة خاصة", menu: "فتح القائمة", close: "إغلاق", fileRequired: "اختر ملفاً أولاً.", textRequired: "ألصق بعض المحتوى أولاً.", micDenied: "تم حظر الميكروفون. اسمح بالوصول إليه من المتصفح ثم حاول مجدداً.", micUnsupported: "هذا المتصفح لا يدعم تسجيل الصوت.", emptyRecording: "لم يتم تسجيل صوت. حاول مرة أخرى.",
+    signIn: "تسجيل الدخول", createAccount: "إنشاء حساب", authTitle: "معرفتك تبقى ملكك.", authSub: "سجّل الدخول للوصول إلى مستنداتك ومحادثاتك المحفوظة وإجاباتك الموثقة.", name: "الاسم الكامل", email: "البريد الإلكتروني", password: "كلمة المرور", passwordHint: "8 أحرف على الأقل", noAccount: "جديد في دليل؟", haveAccount: "لديك حساب؟", logout: "تسجيل الخروج",
+    welcomeUser: "مرحباً بك في دليل، {name}.",
+  },
+};
+
+export type Translations = { [Key in keyof typeof copy.en]: string };
